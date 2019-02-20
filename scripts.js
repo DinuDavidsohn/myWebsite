@@ -1,7 +1,17 @@
+deg = 0 
+function rotateWipProp(deg) {
+    var image = document.getElementById('wipPropWrapper')
+    image.style.transform = 'rotate(' + deg + 'deg)';
+    return deg+= 3
+}
+setInterval(rotateWipProp(deg), 100)
+
+
+
 //https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&key=YOUR_API_KEY
 function retrieveElevation(Latitude, Longitude) {
-    var output = 
-    https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&key=YOUR_API_KEY
+    var output =
+        'https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&key=YOUR_API_KEY'
 }
 
 
