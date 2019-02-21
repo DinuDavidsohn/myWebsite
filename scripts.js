@@ -1,10 +1,11 @@
-deg = 0 
-function rotateWipProp(deg) {
+var deg = 0 
+function rotateWipProp() {
     var image = document.getElementById('wipPropWrapper')
     image.style.transform = 'rotate(' + deg + 'deg)';
-    return deg+= 3
+    return deg+= 1
 }
-setInterval(rotateWipProp(deg), 100)
+var FPS = 60
+setInterval(rotateWipProp, 1000 / FPS)
 
 
 
